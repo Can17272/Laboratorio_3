@@ -27,10 +27,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+void SETUP (void){
+    PORTA=0;
+    PORTB=0;
+    PORTC=0;
+    PORTE=0;
+    
+    TRISA=0;
+    TRISB=1;
+    TRISC=0;
+    TRISD=0;
+    
+    ANSEL=0;
+    ANSELH=1;
+}
 
 void main(void) {
-
+    SETUP();
 
 }
 

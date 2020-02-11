@@ -5,6 +5,7 @@ int EN;
 int RS;
 int RW;
 int VAR_LCD;
+char cursor;
 
 //int delay();
 //void LCD_INIT
@@ -15,7 +16,6 @@ void LCD_INIT (unsigned char VAR1){
     RS=0;
     RW=0;
     delay(5);
-    return (0);
     EN=0;
 }
 
@@ -23,6 +23,20 @@ void LCD_CLR (void){
     LCD_INIT(0);
     LCD_INIT(1);
 }
+
+void LCD_CURSOR (char a, char b){
+    if (a==1){
+        cursor =0x80+b-1;
+        LCD_INIT(cursor);
+    }
+    if (a==2){
+        cursor = 0xC0+b-1;
+        LCD_INIT(cursor);
+    }
+}
+
+
+
 int delay()
 {
    int c, d;

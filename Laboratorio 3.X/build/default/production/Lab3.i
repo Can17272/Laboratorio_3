@@ -1,4 +1,4 @@
-# 1 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c"
+# 1 "Lab3.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,14 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c" 2
+# 1 "Lab3.c" 2
+
+
+
+
+
+
+
 #pragma config FOSC = INTRC_NOCLKOUT
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -2510,7 +2517,8 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
-# 20 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c" 2
+# 26 "Lab3.c" 2
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdio.h" 1 3
 
 
@@ -2608,7 +2616,8 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 21 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c" 2
+# 27 "Lab3.c" 2
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdlib.h" 1 3
 
 
@@ -2692,76 +2701,25 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 22 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c" 2
-# 36 "../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c"
-void delay(int cnt)
-{
-    int i;
-    for(i=0;i<cnt;i++);
+# 28 "Lab3.c" 2
+
+
+void SETUP (void){
+    PORTA=0;
+    PORTB=0;
+    PORTC=0;
+    PORTE=0;
+
+    TRISA=0;
+    TRISB=1;
+    TRISC=0;
+    TRISD=0;
+
+    ANSEL=0;
+    ANSELH=1;
 }
 
+void main(void) {
+    SETUP();
 
-
-void Lcd_CmdWrite(char cmd)
-{
-    PORTA = cmd;
-    PORTD &= ~(1<<0);
-    PORTD &= ~(1<<1);
-    PORTD |= (1<<2);
-    delay(100);
-    PORTD &= ~(1<<2);
-
-    delay(10000);
-}
-
-
-
-
-void Lcd_DataWrite(char dat)
-{
-    PORTA = dat;
-    PORTD |= (1<<0);
-    PORTD &= ~(1<<1);
-    PORTD |= (1<<2);
-    delay(100);
-    PORTD &= ~(1<<2);
-
-    delay(10000);
-}
-
-
-
-int main()
-{
-    char i,a[]={"Good morning!"};
-
-    TRISA = 0x00;
-    TRISD = 0x00;
-
-
-    Lcd_CmdWrite(0x38);
-    Lcd_CmdWrite(0x0E);
-    Lcd_CmdWrite(0x01);
-    Lcd_CmdWrite(0x80);
-
-
-    Lcd_DataWrite('H');
-    Lcd_DataWrite('e');
-    Lcd_DataWrite('l');
-    Lcd_DataWrite('l');
-    Lcd_DataWrite('o');
-    Lcd_DataWrite(' ');
-    Lcd_DataWrite('w');
-    Lcd_DataWrite('o');
-    Lcd_DataWrite('r');
-    Lcd_DataWrite('l');
-    Lcd_DataWrite('d');
-
-    Lcd_CmdWrite(0xc0);
-    for(i=0;a[i]!=0;i++)
-    {
-        Lcd_DataWrite(a[i]);
-    }
-
-    while(1);
 }
