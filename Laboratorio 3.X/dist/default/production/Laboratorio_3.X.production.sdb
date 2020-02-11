@@ -1,0 +1,65 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"36 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3/Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c
+[v _delay delay `(v  1 e 1 0 ]
+"44
+[v _Lcd_CmdWrite Lcd_CmdWrite `(v  1 e 1 0 ]
+"59
+[v _Lcd_DataWrite Lcd_DataWrite `(v  1 e 1 0 ]
+"73
+[v _main main `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"166 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"73 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3/Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"75
+[v main@a a `[14]uc  1 a 14 0 ]
+[v main@i i `uc  1 a 1 14 ]
+[v main@F1454 F1454 `[14]uc  1 s 14 F1454 ]
+"106
+} 0
+"59
+[v _Lcd_DataWrite Lcd_DataWrite `(v  1 e 1 0 ]
+{
+[v Lcd_DataWrite@dat dat `uc  1 a 1 wreg ]
+[v Lcd_DataWrite@dat dat `uc  1 a 1 wreg ]
+"61
+[v Lcd_DataWrite@dat dat `uc  1 a 1 6 ]
+"69
+} 0
+"44
+[v _Lcd_CmdWrite Lcd_CmdWrite `(v  1 e 1 0 ]
+{
+[v Lcd_CmdWrite@cmd cmd `uc  1 a 1 wreg ]
+[v Lcd_CmdWrite@cmd cmd `uc  1 a 1 wreg ]
+"46
+[v Lcd_CmdWrite@cmd cmd `uc  1 a 1 6 ]
+"54
+} 0
+"36
+[v _delay delay `(v  1 e 1 0 ]
+{
+"38
+[v delay@i i `i  1 a 2 3 ]
+"36
+[v delay@cnt cnt `i  1 p 2 0 ]
+"40
+} 0
