@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+$C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 2 2
 $dist/default/production\Laboratorio_3.X.production.o
@@ -65,20 +65,20 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Laboratorio_3.X.production.o
-7F3 cinit CODE >612:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F3 cinit CODE >615:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F3 cinit CODE >638:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F4 cinit CODE >639:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F5 cinit CODE >640:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F6 cinit CODE >641:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F7 cinit CODE >642:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F8 cinit CODE >643:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7F9 cinit CODE >644:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7FA cinit CODE >645:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7FB cinit CODE >646:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7FC cinit CODE >652:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7FC cinit CODE >654:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
-7FD cinit CODE >655:C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
+7F3 cinit CODE >612:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F3 cinit CODE >615:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F3 cinit CODE >638:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F4 cinit CODE >639:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F5 cinit CODE >640:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F6 cinit CODE >641:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F7 cinit CODE >642:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F8 cinit CODE >643:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7F9 cinit CODE >644:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7FA cinit CODE >645:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7FB cinit CODE >646:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7FC cinit CODE >652:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7FC cinit CODE >654:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
+7FD cinit CODE >655:C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
 7E0 text1 CODE >30:C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3\Laboratorio_3\Laboratorio 3.X\Lab3.c
 7E0 text1 CODE >31:C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3\Laboratorio_3\Laboratorio 3.X\Lab3.c
 7E3 text1 CODE >32:C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3\Laboratorio_3\Laboratorio 3.X\Lab3.c
@@ -117,33 +117,33 @@ _EN 76 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio_3.X.production.o
 _RS 74 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio_3.X.production.o
 _RW 72 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio_3.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+___sp 0 0 STACK 2 stack C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 _main FB0 0 CODE 0 maintext dist/default/production\Laboratorio_3.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
-start 0 0 CODE 0 init C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+start 0 0 CODE 0 init C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
-___stacklo 0 0 ABS 0 - C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+___stackhi 0 0 ABS 0 - C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
+___stacklo 0 0 ABS 0 - C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 __size_of_SETUP 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 start_initialization FE6 0 CODE 0 cinit dist/default/production\Laboratorio_3.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+___int_sp 0 0 STACK 2 stack C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -186,7 +186,7 @@ __CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.productio
 _cursor 78 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio_3.X.production.o
 __CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\Laboratorio_3.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\TOSHIBA\AppData\Local\Temp\sq54.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\TOSHIBA\AppData\Local\Temp\sq64.o
 __pmaintext FB0 0 CODE 0 maintext dist/default/production\Laboratorio_3.X.production.o
 _VAR_LCD 70 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio_3.X.production.o
 __Lcommon 0 0 ABS 0 common -

@@ -133,7 +133,7 @@ text1 FC0 FE5 CODE FC0 0
 maintext FB0 FBF CODE FB0 0
 %locals
 dist/default/production\Laboratorio_3.X.production.o
-C:\Users\TOSHIBA\AppData\Local\Temp\sq54.s
+C:\Users\TOSHIBA\AppData\Local\Temp\sq64.s
 612 7F3 0 CODE 0
 615 7F3 0 CODE 0
 638 7F3 0 CODE 0

@@ -2531,8 +2531,34 @@ void LCD_CURSOR (char a, char b){
     }
 }
 
+void LCD_PROG (void){
+    delay(20);
+    LCD_INIT(0x30);
+    delay(5);
+    LCD_INIT(0x30);
+    delay(10);
+    LCD_INIT(0x38);
+    LCD_INIT(0x10);
+    LCD_INIT(0x01);
+    LCD_INIT(0x06);
+    LCD_INIT(0x0C);
+    LCD_INIT(0x80);
+}
 
+void CHAR (unsigned char a){
+    RS = 1;
+    VAR_LCD=a;
+    RW=0;
+    EN=1;
+    delay(30);
+    EN=0;
+}
 
+void WRITE (char *a){
+    int b;
+    for (b==0;a[b]!='\0'; b++)
+        CHAR (a[b]);
+}
 int delay()
 {
    int c, d;

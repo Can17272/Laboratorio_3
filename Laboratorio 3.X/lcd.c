@@ -51,10 +51,18 @@ void LCD_PROG (void){
 
 void CHAR (unsigned char a){
     RS = 1;
-
-
+    VAR_LCD=a;
+    RW=0;
+    EN=1;
+    delay(30);
+    EN=0;
 }
 
+void WRITE (char *a){
+    int b;
+    for (b==0;a[b]!='\0'; b++)
+        CHAR (a[b]);
+}
 int delay()
 {
    int c, d;

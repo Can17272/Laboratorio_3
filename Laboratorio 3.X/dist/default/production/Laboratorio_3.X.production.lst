@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Mon Feb 10 21:25:10 2020
+                                                                                               Wed Feb 12 08:52:27 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F887
@@ -388,7 +388,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    374                           
    375                           ;psect for function _main
    376  07D8                     _main:	
-   377  07D8                     l670:	
+   377  07D8                     l694:	
    378                           ;incstack = 0
    379                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    380                           
@@ -433,7 +433,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    419                           
    420                           ;psect for function _SETUP
    421  07E0                     _SETUP:	
-   422  07E0                     l650:	
+   422  07E0                     l662:	
    423                           ;incstack = 0
    424                           ; Regs used in _SETUP: [wreg+status,2]
    425                           
@@ -456,20 +456,20 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    442  07E6  1683               	bsf	3,5	;RP0=1, select bank1
    443  07E7  1303               	bcf	3,6	;RP1=0, select bank1
    444  07E8  0185               	clrf	5	;volatile
-   445  07E9                     l652:	
+   445  07E9                     l664:	
    446                           
    447                           ;Lab3.c: 37:     TRISB=1;
    448  07E9  3001               	movlw	1
    449  07EA  0086               	movwf	6	;volatile
-   450  07EB                     l654:	
+   450  07EB                     l666:	
    451                           
    452                           ;Lab3.c: 38:     TRISC=0;
    453  07EB  0187               	clrf	7	;volatile
-   454  07EC                     l656:	
+   454  07EC                     l668:	
    455                           
    456                           ;Lab3.c: 39:     TRISD=0;
    457  07EC  0188               	clrf	8	;volatile
-   458  07ED                     l658:	
+   458  07ED                     l670:	
    459                           
    460                           ;Lab3.c: 41:     ANSEL=0;
    461  07ED  1683               	bsf	3,5	;RP0=1, select bank3
@@ -573,12 +573,12 @@ DATA                 0      0       9      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Mon Feb 10 21:25:10 2020
+Symbol Table                                                                                   Wed Feb 12 08:52:27 2020
 
              __CFG_CP$OFF 0000                        l23 07F2                        l28 07DD  
                       _EN 0076                        _RS 0074                        _RW 0072  
-                     l650 07E0                       l652 07E9                       l654 07EB  
-                     l670 07D8                       l656 07EC                       l658 07ED  
+                     l670 07ED                       l662 07E0                       l664 07E9  
+                     l666 07EB                       l668 07EC                       l694 07D8  
             __CFG_CPD$OFF 0000              __CFG_LVP$OFF 0000              __CFG_WRT$OFF 0000  
                     _main 07D8                      btemp 007E                      start 0000  
            __CFG_IESO$OFF 0000                     ?_main 0000             __CFG_WDTE$OFF 0000  

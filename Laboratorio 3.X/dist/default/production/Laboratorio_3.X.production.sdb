@@ -17,7 +17,9 @@
 [v _main main `(v  1 e 1 0 ]
 "13 C:\Users\TOSHIBA\Documents\UVG\7mo Semestre\Digital 2\Lab 3\Laboratorio_3\Laboratorio 3.X\lcd.c
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
-"40
+"52
+[v _CHAR CHAR `(v  1 e 1 0 ]
+"66
 [v _delay delay `(i  1 e 2 0 ]
 "166 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
