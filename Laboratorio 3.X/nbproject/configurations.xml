@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>lcd.h</itemPath>
+      <itemPath>ADC.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -15,7 +16,7 @@
                    projectFiles="true">
       <itemPath>Lab3.c</itemPath>
       <itemPath>lcd.c</itemPath>
-      <itemPath>../../LCD-Interfacing/LCD Interfacing/lcd.X/ADC.c</itemPath>
+      <itemPath>ADC.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -26,6 +27,7 @@
   <sourceRootList>
     <Elem>../../LCD-Interfacing/LCD Interfacing/lcd.X</Elem>
     <Elem>../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

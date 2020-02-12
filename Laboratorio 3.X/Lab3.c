@@ -26,6 +26,17 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "lcd.h"
+#include "ADC.h"
+
+void LCD_CLR(void);
+void LCD_CURSOR(void);
+
+
+int VAL_ADC;
+int VAL_ADC2;
+float POT1;
+float POT2;
 
 void SETUP (void){
     PORTA=0;
@@ -44,6 +55,37 @@ void SETUP (void){
 
 void main(void) {
     SETUP();
+    LCD_PROG();
+    INTERRUPCIONES();
+    LCD_CLR();
+    LCD_CURSOR(1,1); //El cursor se pone en el primer cuadro de la primera fila
+    WRITE("Pot1     POT2    CONT"); //Se escriben los char constantes de arriba en un string
+    while(1){
+        ADC();
+        ADCON0bits.GO_DONE=1;
+        PIR1bits.ADIF=0; //Interrupción del primer ADC
+        
+        VAL_ADC=ADRESH;
+        VAL_ADC=VAL_ADC<<8;
+        VAL_ADC=VAL_ADC + ADRESL;
+        POT1=VAL_ADC*5.0;
+        POT1=POT1/1024.0; //Se convierte el valor del ADC 1 a float y se opera para mostrarse en un rango de 0 a 5V
+        
+        ADC1();
+        ADCON0bits.GO_DONE=1;
+        PIR1bits.ADIF=0; //Interrupción del segundo ADC
+        
+        VAL_ADC2=ADRESH;
+        VAL_ADC2=VAL_ADC2<<8;
+        VAL_ADC2=VAL_ADC2+ADRESL;
+        POT2=VAL_ADC2*5.0;
+        POT2=POT2/1024.0; //Se convierte el valor del ADC 2 a float y se opera para mostrarse en un rango de 0 a 5V
+        
+        //sprintf()
+        
+    }
+    
+    
 
 }
 

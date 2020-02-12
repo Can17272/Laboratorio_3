@@ -252,15 +252,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;lcd.c: 8: char cursor;
 [v _cursor `uc ~T0 @X0 1 e ]
 "13
-[; ;lcd.c: 13: void LCD_INIT (unsigned char VAR1){
+[; ;lcd.c: 13: void LCD_INIT (unsigned char a){
 [v _LCD_INIT `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _LCD_INIT ]
-[v _VAR1 `uc ~T0 @X0 1 r1 ]
+[v _a `uc ~T0 @X0 1 r1 ]
 [f ]
 "14
-[; ;lcd.c: 14:     VAR_LCD = VAR1;
-[e = _VAR_LCD -> _VAR1 `i ]
+[; ;lcd.c: 14:     VAR_LCD = a;
+[e = _VAR_LCD -> _a `i ]
 "15
 [; ;lcd.c: 15:     EN=1;
 [e = _EN -> 1 `i ]
@@ -419,9 +419,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;lcd.c: 62:     int b;
 [v _b `i ~T0 @X0 1 a ]
 "63
-[; ;lcd.c: 63:     for (b==0;a[b]!='\0'; b++)
+[; ;lcd.c: 63:     for (b=0;a[b]!='\0'; b++)
 {
-[e == _b -> 0 `i ]
+[e = _b -> 0 `i ]
 [e $U 149  ]
 [e :U 146 ]
 "64

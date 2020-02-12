@@ -2506,8 +2506,8 @@ char cursor;
 
 
 
-void LCD_INIT (unsigned char VAR1){
-    VAR_LCD = VAR1;
+void LCD_INIT (unsigned char a){
+    VAR_LCD = a;
     EN=1;
     RS=0;
     RW=0;
@@ -2556,7 +2556,7 @@ void CHAR (unsigned char a){
 
 void WRITE (char *a){
     int b;
-    for (b==0;a[b]!='\0'; b++)
+    for (b=0;a[b]!='\0'; b++)
         CHAR (a[b]);
 }
 int delay()

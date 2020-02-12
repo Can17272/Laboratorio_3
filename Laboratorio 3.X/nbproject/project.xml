@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>../../LCD-Interfacing/LCD Interfacing/lcd.X</sourceRootElem>
                 <sourceRootElem>../../Pic16f877a_ExploreUltraPicDevKit-master/Pic16f877a_ExploreUltraPicDevKit-master/Code/Tutorial Examples/LCD16X2-8bitExample/LCD16X2-8bitExample.X</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
