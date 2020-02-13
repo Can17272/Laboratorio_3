@@ -2494,6 +2494,18 @@ extern __bank0 __bit __timeout;
 # 1 "lcd.c" 2
 
 # 1 "./lcd.h" 1
+
+
+
+
+
+void LCD_INIT (unsigned char a);
+void LCD_CLR (void);
+void LCD_CURSOR (char a, char b);
+void LCD_PROG (void);
+void CHAR (unsigned char a);
+void WRITE (char *a);
+int delay();
 # 2 "lcd.c" 2
 
 

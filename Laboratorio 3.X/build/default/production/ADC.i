@@ -2494,6 +2494,14 @@ extern __bank0 __bit __timeout;
 # 1 "ADC.c" 2
 
 # 1 "./ADC.h" 1
+
+
+
+
+
+void ADC(void);
+void ADC1(void);
+void INTERRUPCIONES(void);
 # 2 "ADC.c" 2
 
 void ADC(void) {

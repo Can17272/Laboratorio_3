@@ -29,8 +29,8 @@
 #include "lcd.h"
 #include "ADC.h"
 
-void LCD_CLR(void);
-void LCD_CURSOR(void);
+/*void LCD_CLR(void);
+void LCD_CURSOR(void);*/
 
 
 int VAL_ADC;
