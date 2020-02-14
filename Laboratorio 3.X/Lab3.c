@@ -26,6 +26,8 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
+#include <pic16F887.h>
 #include "lcd.h"
 #include "ADC.h"
 
@@ -33,8 +35,9 @@
 void LCD_CURSOR(void);*/
 
 
-int VAL_ADC;
-int VAL_ADC2;
+uint16_t VAL_ADC;
+uint16_t VAL_ADC2;
+char BUFFER [16];
 float POT1;
 float POT2;
 
@@ -78,10 +81,16 @@ void main(void) {
         VAL_ADC2=ADRESH;
         VAL_ADC2=VAL_ADC2<<8;
         VAL_ADC2=VAL_ADC2+ADRESL;
-        POT2=VAL_ADC2*5.0;
+        POT2=(VAL_ADC2*5.0);
         POT2=POT2/1024.0; //Se convierte el valor del ADC 2 a float y se opera para mostrarse en un rango de 0 a 5V
         
-        //sprintf()
+        sprintf(BUFFER,"%04.2f %04.2f",POT1,POT2);
+        LCD_CURSOR(2,1);
+        WRITE(BUFFER);
+        LCD_CURSOR(2,5);
+        WRITE("V");
+        LCD_CURSOR(2,11);
+        WRITE("V");
         
     }
     
